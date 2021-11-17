@@ -448,3 +448,13 @@ img{
     right: 10%;
   }
 }
+
+.work__img{
+  position: relative;
+}
+
+.work__img__link{
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+}
