@@ -474,4 +474,7 @@ img{
     /* right: 10%; */
     width: 250px;
   }
+  .home__title {
+      font-size: 1.7rem;
+    }
 }
