@@ -15,7 +15,7 @@
 /*===== Fuente y tipografia =====*/
 :root{
   --body-font: 'Poppins', sans-serif;
-  --big-font-size: 2rem;
+  --big-font-size: 3rem !important;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
 }
@@ -252,6 +252,35 @@ img{
   border-radius: .5rem;
 }
 
+
+/* EDUCATION */
+
+.education{
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.education_engg{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 3rem;
+  min-width: 25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .education{
+    align-items: center;
+  }
+}
+
+
+.education_title{
+  font-weight: 600;
+}
+
 /* ===== SKILLS =====*/
 .skills__container{
   row-gap: 2rem;
@@ -366,6 +395,7 @@ img{
   margin: 0 var(--mb-2)
 }
 
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
   body{
@@ -418,8 +448,10 @@ img{
     margin-right: var(--mb-4);
   }
   .home__img{
-    width: 457px;
-    bottom: 15%;
+    position: absolute;
+      right: 0;
+      bottom: 2rem;
+      width: 355px;
   }
 
   .about__container, .skills__container{
@@ -477,4 +509,26 @@ img{
   .home__title {
       font-size: 1.4rem;
     }
+}
+
+
+@media screen and (min-width : 375px) and (max-width: 767px) {
+
+  .home__img {
+    width: 16rem !important;
+  }
+
+  img {
+    position: absolute;
+    bottom: 1.1rem;
+  }
+
+  .home__title {
+    font-size: 1.6rem !important;
+  }
+}
+
+.locaion {
+  font-size: large;
+  /* font-family: 'JetBrains Mono', monospace; */
 }
